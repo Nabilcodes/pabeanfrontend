@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/pabeanfrontend/static/css/main.4c125013.css",
-    "main.js": "/pabeanfrontend/static/js/main.eea724ef.js",
+    "main.js": "/pabeanfrontend/static/js/main.a6be1853.js",
     "static/js/453.28f67553.chunk.js": "/pabeanfrontend/static/js/453.28f67553.chunk.js",
     "index.html": "/pabeanfrontend/index.html",
     "main.4c125013.css.map": "/pabeanfrontend/static/css/main.4c125013.css.map",
-    "main.eea724ef.js.map": "/pabeanfrontend/static/js/main.eea724ef.js.map",
+    "main.a6be1853.js.map": "/pabeanfrontend/static/js/main.a6be1853.js.map",
     "453.28f67553.chunk.js.map": "/pabeanfrontend/static/js/453.28f67553.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4c125013.css",
-    "static/js/main.eea724ef.js"
+    "static/js/main.a6be1853.js"
   ]
 }
