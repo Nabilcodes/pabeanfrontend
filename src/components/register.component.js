@@ -10,7 +10,7 @@ const SignUp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('https://thingproxy.freeboard.io/fetch/http://35.213.169.90/auth/register', {
+    fetch('http://35.213.169.90/auth/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
