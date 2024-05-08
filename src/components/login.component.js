@@ -6,7 +6,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('https://thingproxy.freeboard.io/fetch/http://35.213.169.90/auth/login', {
+    fetch('http://35.213.169.90/auth/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
