@@ -1,9 +1,10 @@
 import React from 'react';
+import './FlowPage.css';
 import { useNavigate } from 'react-router-dom';
-import ImportDeclarationForm from '../components/pib.component';
-import './PibPage.css';
+import captureImage from '../assets/img/Capture.PNG';
 
-const PibPage = () => {
+const FlowPage = () => {
+
   const navigate = useNavigate();
 
   const handleBackClick = () => {
@@ -11,14 +12,14 @@ const PibPage = () => {
   };
 
   return (
-    <div className="pib-page">
+    <div className="flow-page">
       <button className="back-button" onClick={handleBackClick}>
         &#8592; Back to Homepage
       </button>
-      <h1>Form Upload PIB</h1>
-      <ImportDeclarationForm />
+      <h1>Alur Proses Import</h1>
+      <img src={captureImage} alt="Alur Proses Import" className="flow-image" />
     </div>
   );
 };
 
-export default PibPage;
+export default FlowPage;

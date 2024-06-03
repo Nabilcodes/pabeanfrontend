@@ -6,14 +6,14 @@ body {
   background-color: #f0f2f5;
 }
 
-.login-container {
+.signup-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.login-card {
+.signup-card {
   width: 100%;
   max-width: 400px;
   padding: 20px;
@@ -22,12 +22,12 @@ body {
   background-color: #ffffff;
 }
 
-.login-card form {
+.signup-card form {
   display: flex;
   flex-direction: column;
 }
 
-.login-card h3 {
+.signup-card h3 {
   margin-bottom: 20px;
   color: #333333;
 }
@@ -41,19 +41,6 @@ body {
   padding: 10px;
   border: 1px solid #cccccc;
   border-radius: 5px;
-}
-
-.custom-control {
-  display: flex;
-  align-items: center;
-}
-
-.custom-control-input {
-  margin-right: 10px;
-}
-
-.custom-control-label {
-  color: #333333;
 }
 
 .d-grid {

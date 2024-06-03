@@ -17,12 +17,12 @@ const HomePage = () => {
           <h2>Cek Status</h2>
           <p>Click here to check status</p>
         </Link>
-        <Link to="/cek-status" className="card">
-          <h2>Panduan Impor - Ekspor</h2>
+        <Link to="/alur-impor" className="card">
+          <h2>Alur Proses Impor</h2>
           <p>Click here to check status</p>
         </Link>
-        <Link to="/cek-status" className="card">
-          <h2>Cek Status</h2>
+        <Link to="/riwayat-permintaan" className="card">
+          <h2>Riwayat Permintaan</h2>
           <p>Click here to check status</p>
         </Link>
         <Link to="/cek-status" className="card">

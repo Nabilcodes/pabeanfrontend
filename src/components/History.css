@@ -1,0 +1,41 @@
+.requests-page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.requests-page h1 {
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.requests-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.request-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.request-card h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.request-card p {
+  color: #555555;
+  margin: 10px 0;
+}
+
+.request-card:hover {
+  transform: translateY(-5px);
+}
