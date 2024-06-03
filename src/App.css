@@ -33,7 +33,8 @@
   box-shadow: 0 4px 8px rgba(218, 213, 213, 0.1);
   padding: 20px;
   background-color: #ece9ec;
-  max-width: 300px;
+  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
