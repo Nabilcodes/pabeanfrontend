@@ -6,7 +6,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Login from './components/login.component'
 import SignUp from './components/register.component'
 import LandingPage from './components/landingPage.component'
-import UploadPIB from './components/pib.component'
+import HomePage from './pages/homepage.component'
+import StatusPage from './pages/statuspage.component'
+import UploadPIB from './pages/pibpage.component'
 
 function App() {
   return (
@@ -40,8 +42,10 @@ function App() {
               <Route exact path="/" element={<Login />} />
               <Route path="/sign-in" element={<Login />} />
               <Route path="/sign-up" element={<SignUp />} />
+              <Route path="/home-page" element={<HomePage />} />
               <Route path="/landing-page" element={<LandingPage />} />
               <Route path="/upload-pib" element={<UploadPIB />} />
+              <Route path="/cek-status" element={<StatusPage />} />
             </Routes>
           </div>
         </div>
