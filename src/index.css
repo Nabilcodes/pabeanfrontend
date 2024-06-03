@@ -14,12 +14,12 @@ code {
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
 
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 body {
   background: #38393a !important;
   min-height: 100vh;
-  display: flex;
+  /* display: flex; */
   font-weight: 400;
   font-family: "Fira Sans", sans-serif;
 }
@@ -58,11 +58,12 @@ html,
 }
 
 .auth-inner {
-  width: 450px;
+  width: 1700px;
+  height: 1000px;
   margin: auto;
   background: #ffffff;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  padding: 40px 55px 45px 55px;
+  /* padding: 40px 55px 45px 55px; */
   border-radius: 15px;
   transition: all 0.3s;
 }
@@ -76,7 +77,7 @@ html,
   text-align: center;
   margin: 0;
   line-height: 1;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .custom-control-label {
@@ -87,7 +88,7 @@ html,
 .forgot-password a {
   text-align: right;
   font-size: 13px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   color: #7f7d7d;
   margin: 0;
 }
