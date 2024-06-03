@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,10 +31,10 @@
 .card {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(218, 213, 213, 0.1);
-  padding: 20px;
+  padding: 400px;
   background-color: #ece9ec;
   max-width: 1200px;
-  width: 1200px;
+  width: 1000px;
   margin: 0 auto;
 }
 
