@@ -3,52 +3,53 @@ import './ImportDeclarationForm.css';
 
 function ImportDeclarationForm() {
     const [formData, setFormData] = useState({
-        kantorPabean: '',
-        nomorPengajuan: '',
-        tanggalPengajuan: '',
-        jenisPIB: '',
-        jenisImpor: '',
-        caraPembayaran: '',
+        // kantorPabean: '',
+        // nomorPengajuan: '',
+        // tanggalPengajuan: '',
+        // jenisPIB: '',
+        // jenisImpor: '',
+        // caraPembayaran: '',
+        emailPengirim: '',
         namaPengirim: '',
-        alamatPengirim: '',
-        nomorPendaftaran: '',
-        tanggalPendaftaran: '',
-        caraPengangkutan: '',
-        namaSaranaPengangkut: '',
+        // alamatPengirim: '',
+        // nomorPendaftaran: '',
+        // tanggalPendaftaran: '',
+        // caraPengangkutan: '',
+        // namaSaranaPengangkut: '',
         namaPenjual: '',
-        alamatPenjual: '',
-        perkiraanTanggalTiba: '',
-        pelabuhanMuat: '',
-        pelabuhanTransit: '',
-        pelabuhanTujuan: '',
-        identitasImportir: '',
-        nomorInvoice: '',
-        tanggalInvoice: '',
-        namaImportir: '',
-        alamatImportir: '',
-        nomorHouseBL: '',
-        tanggalHouseBL: '',
-        nomorMasterBL: '',
-        tanggalMasterBL: '',
-        nomorBC11: '',
-        tanggalBC11: '',
-        npwpPemilikBarang: '',
-        namaPemilikBarang: '',
-        alamatPemilikBarang: '',
-        tempatPenimbunan: '',
-        npwpPPJK: '',
-        namaPPJK: '',
-        valuta: '',
-        nilaiFOB: '',
-        nilaiAsuransi: '',
-        nilaiFreight: '',
-        nilaiPabean: '',
-        jenisBarang: '',
-        negaraAsal: '',
-        jumlahSatuan: '',
-        beratBersih: '',
-        jenisPungutan: '',
-        nilaiPungutan: ''
+        // alamatPenjual: '',
+        // perkiraanTanggalTiba: '',
+        // pelabuhanMuat: '',
+        // pelabuhanTransit: '',
+        // pelabuhanTujuan: '',
+        // identitasImportir: '',
+        // nomorInvoice: '',
+        // tanggalInvoice: '',
+        // namaImportir: '',
+        // alamatImportir: '',
+        // nomorHouseBL: '',
+        // tanggalHouseBL: '',
+        // nomorMasterBL: '',
+        // tanggalMasterBL: '',
+        // nomorBC11: '',
+        // tanggalBC11: '',
+        // npwpPemilikBarang: '',
+        // namaPemilikBarang: '',
+        // alamatPemilikBarang: '',
+        // tempatPenimbunan: '',
+        // npwpPPJK: '',
+        // namaPPJK: '',
+        // valuta: '',
+        nilaiFOB: 0,
+        // nilaiAsuransi: '',
+        // nilaiFreight: '',
+        nilaiPabean: 0
+        // jenisBarang: '',
+        // negaraAsal: '',
+        // jumlahSatuan: '',
+        // beratBersih: '',
+        // jenisPungutan: '',
+        // nilaiPungutan: ''
     });
 
     const handleChange = (e) => {
@@ -63,6 +64,29 @@ function ImportDeclarationForm() {
         e.preventDefault();
         // Handle form submission logic here
         console.log(formData);
+        fetch('http://127.0.0.1:8000/orchestrate-get-billing', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(
+                {
+                    billed_name: formData.namaPengirim, 
+                    billed_email: formData.emailPengirim,
+                    nilai_fob: formData.nilaiFOB,
+                    nilai_pabean: formData.nilaiPabean
+                }),
+        })
+            .then((response) => {
+                if (response.ok) {
+                console.log(response);
+                } else {
+                console.error('Billing creation failed');
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
     };
 
     return (

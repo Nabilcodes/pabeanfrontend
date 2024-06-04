@@ -21,7 +21,7 @@ const Login = () => {
       .then((response) => {
         if (response.ok) {
           console.log('Login successful');
-          redirectToLandingPage(); // Call the redirect function
+          // redirectToLandingPage(); // Call the redirect function
         } else {
           console.error('Login failed');
         }
