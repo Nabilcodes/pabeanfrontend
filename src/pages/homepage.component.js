@@ -6,28 +6,24 @@ const HomePage = () => {
   return (
     <div className="home-container">
       <div className="welcome-text">
-        <h1>Welcome to Our Website</h1>
+        <h1>Selamat datang di Pabean!</h1>
       </div>
       <div className="card-container">
         <Link to="/upload-pib" className="card">
           <h2>Upload Data PIB</h2>
-          <p>Click here to upload PIB data</p>
+          <p>Upload data PIB anda</p>
         </Link>
         <Link to="/cek-status" className="card">
           <h2>Cek Status</h2>
-          <p>Click here to check status</p>
+          <p>Cek status permintaan anda</p>
         </Link>
         <Link to="/alur-impor" className="card">
           <h2>Alur Proses Impor</h2>
-          <p>Click here to check status</p>
+          <p>Lihat alur proses impor secara umum</p>
         </Link>
         <Link to="/riwayat-permintaan" className="card">
           <h2>Riwayat Permintaan</h2>
-          <p>Click here to check status</p>
-        </Link>
-        <Link to="/cek-status" className="card">
-          <h2>Cek Status</h2>
-          <p>Click here to check status</p>
+          <p>Lihat riwayat permintaan anda</p>
         </Link>
         
       </div>

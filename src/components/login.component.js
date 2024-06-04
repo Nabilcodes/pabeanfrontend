@@ -6,7 +6,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
 
   const redirectToLandingPage = () => {
-    window.location.href = '/landing-page'; 
+    window.location.href = '/home-page'; 
   };
 
   const handleSubmit = (e) => {
