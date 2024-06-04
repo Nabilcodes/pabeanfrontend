@@ -64,7 +64,7 @@ function ImportDeclarationForm() {
         e.preventDefault();
         // Handle form submission logic here
         console.log(formData);
-        fetch('http://127.0.0.1:8000/orchestrate-get-billing', {
+        fetch('http://35.213.145.155:8000/orchestrate-get-billing', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
