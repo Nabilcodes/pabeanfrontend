@@ -3,52 +3,52 @@ import './ImportDeclarationForm.css';
 
 function ImportDeclarationForm() {
     const [formData, setFormData] = useState({
-        kantorPabean: '',
-        nomorPengajuan: '',
-        tanggalPengajuan: '',
-        jenisPIB: '',
-        jenisImpor: '',
-        caraPembayaran: '',
+        // kantorPabean: '',
+        // nomorPengajuan: '',
+        // tanggalPengajuan: '',
+        // jenisPIB: '',
+        // jenisImpor: '',
+        // caraPembayaran: '',
         namaPengirim: '',
-        alamatPengirim: '',
-        nomorPendaftaran: '',
-        tanggalPendaftaran: '',
-        caraPengangkutan: '',
-        namaSaranaPengangkut: '',
+        // alamatPengirim: '',
+        // nomorPendaftaran: '',
+        // tanggalPendaftaran: '',
+        // caraPengangkutan: '',
+        // namaSaranaPengangkut: '',
         namaPenjual: '',
-        alamatPenjual: '',
-        perkiraanTanggalTiba: '',
-        pelabuhanMuat: '',
-        pelabuhanTransit: '',
-        pelabuhanTujuan: '',
-        identitasImportir: '',
-        nomorInvoice: '',
-        tanggalInvoice: '',
-        namaImportir: '',
-        alamatImportir: '',
-        nomorHouseBL: '',
-        tanggalHouseBL: '',
-        nomorMasterBL: '',
-        tanggalMasterBL: '',
-        nomorBC11: '',
-        tanggalBC11: '',
-        npwpPemilikBarang: '',
-        namaPemilikBarang: '',
-        alamatPemilikBarang: '',
-        tempatPenimbunan: '',
-        npwpPPJK: '',
-        namaPPJK: '',
-        valuta: '',
-        nilaiFOB: '',
-        nilaiAsuransi: '',
-        nilaiFreight: '',
-        nilaiPabean: '',
-        jenisBarang: '',
-        negaraAsal: '',
-        jumlahSatuan: '',
-        beratBersih: '',
-        jenisPungutan: '',
-        nilaiPungutan: ''
+        // alamatPenjual: '',
+        // perkiraanTanggalTiba: '',
+        // pelabuhanMuat: '',
+        // pelabuhanTransit: '',
+        // pelabuhanTujuan: '',
+        // identitasImportir: '',
+        // nomorInvoice: '',
+        // tanggalInvoice: '',
+        // namaImportir: '',
+        // alamatImportir: '',
+        // nomorHouseBL: '',
+        // tanggalHouseBL: '',
+        // nomorMasterBL: '',
+        // tanggalMasterBL: '',
+        // nomorBC11: '',
+        // tanggalBC11: '',
+        // npwpPemilikBarang: '',
+        // namaPemilikBarang: '',
+        // alamatPemilikBarang: '',
+        // tempatPenimbunan: '',
+        // npwpPPJK: '',
+        // namaPPJK: '',
+        // valuta: '',
+        nilaiFOB: 0,
+        // nilaiAsuransi: '',
+        // nilaiFreight: '',
+        nilaiPabean: 0,
+        // jenisBarang: '',
+        // negaraAsal: '',
+        // jumlahSatuan: '',
+        // beratBersih: '',
+        // jenisPungutan: '',
+        // nilaiPungutan: ''
     });
 
     const handleChange = (e) => {
@@ -63,6 +63,24 @@ function ImportDeclarationForm() {
         e.preventDefault();
         // Handle form submission logic here
         console.log(formData);
+        // fetch('http://127.0.0.1/auth/register', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //     },
+        //     body: JSON.stringify({ formData }),
+        // })
+        // .then((response) => {
+        //     if (response.ok) {
+        //     console.log('Registration successful');
+        //     window.location.href = '/sign-in'; 
+        //     } else {
+        //     console.error('Registration failed');
+        //     }
+        // })
+        // .catch((error) => {
+        //     console.error('Error:', error);
+        // });
     };
 
     return (
