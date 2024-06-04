@@ -9,6 +9,7 @@ function ImportDeclarationForm() {
         // jenisPIB: '',
         // jenisImpor: '',
         // caraPembayaran: '',
+        emailPengirim: '',
         namaPengirim: '',
         // alamatPengirim: '',
         // nomorPendaftaran: '',
@@ -42,7 +43,7 @@ function ImportDeclarationForm() {
         nilaiFOB: 0,
         // nilaiAsuransi: '',
         // nilaiFreight: '',
-        nilaiPabean: 0,
+        nilaiPabean: 0
         // jenisBarang: '',
         // negaraAsal: '',
         // jumlahSatuan: '',
@@ -63,24 +64,29 @@ function ImportDeclarationForm() {
         e.preventDefault();
         // Handle form submission logic here
         console.log(formData);
-        // fetch('http://127.0.0.1/auth/register', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify({ formData }),
-        // })
-        // .then((response) => {
-        //     if (response.ok) {
-        //     console.log('Registration successful');
-        //     window.location.href = '/sign-in'; 
-        //     } else {
-        //     console.error('Registration failed');
-        //     }
-        // })
-        // .catch((error) => {
-        //     console.error('Error:', error);
-        // });
+        fetch('http://127.0.0.1:8000/orchestrate-get-billing', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(
+                {
+                    billed_name: formData.namaPengirim, 
+                    billed_email: formData.emailPengirim,
+                    nilai_fob: formData.nilaiFOB,
+                    nilai_pabean: formData.nilaiPabean
+                }),
+        })
+            .then((response) => {
+                if (response.ok) {
+                console.log(response);
+                } else {
+                console.error('Billing creation failed');
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
     };
 
     return (
